@@ -1,6 +1,6 @@
 {
   "name": "vue-the-filters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue Filters",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/72fcosta/vue-the-filters.git"
   },
   "keywords": [
-    "brasil",
-    "72fcosta",
     "filters",
-    "upperFirst"
+    "upperFirst",
+    "datePretty",
+    "datetimePretty"
   ],
   "author": "72fcosta@gmail.com",
   "license": "ISC",
