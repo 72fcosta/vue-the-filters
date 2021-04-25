@@ -2,7 +2,7 @@ import { upperFirst } from './filters/upperFirst'
 import { datePretty } from './filters/datePretty'
 import { datetimePretty } from './filters/datetimePretty'
 
-const vueFilters72fcosta = {
+const vueTheFilters = {
    install (Vue, options) {
       upperFirst(Vue, options)
       datePretty(Vue, options)
@@ -11,7 +11,7 @@ const vueFilters72fcosta = {
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-   window.Vue.use(vueFilters72fcosta)
+   window.Vue.use(vueTheFilters)
 }
 
-export default vueFilters72fcosta
+export default vueTheFilters
