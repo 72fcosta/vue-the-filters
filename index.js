@@ -1,17 +1,1 @@
-import { upperFirst } from './filters/upperFirst'
-import { datePretty } from './filters/datePretty'
-import { datetimePretty } from './filters/datetimePretty'
-
-const vueFilters72fcosta = {
-   install (Vue, options) {
-      upperFirst(Vue, options)
-      datePretty(Vue, options)
-      datetimePretty(Vue, options)
-   }
-}
-
-if (typeof window !== 'undefined' && window.Vue) {
-   window.Vue.use(vueFilters72fcosta)
-}
-
-export default vueFilters72fcosta
+(()=>{"use strict";var t={install:function(t,e){!function(t){t.filter("upperFirst",(function(t){return t?t=t.toLowerCase().split(" ").map((function(t,e){return t=t.replace(/-./,(function(t){return t.toUpperCase()})),["i","ii","iii","iv","xv"].includes(t)?t=t.toUpperCase():(0===e||t.length>2||"."===t.slice(-1)[0])&&!["sem","com","por","dos","das"].includes(t)&&(t=t[0].toUpperCase()+t.slice(1)),t})).join(" "):""}))}(t),function(t){t.filter("datePretty",(function(t){if(!t)return"";var e=new Date(t);return"".concat(e.toLocaleDateString("pt-BR",{year:"2-digit",month:"2-digit",day:"2-digit"}))}))}(t),function(t){t.filter("datetimePretty",(function(t){if(!t)return"";var e=new Date(t);return"".concat(e.toLocaleDateString("pt-BR",{dateStyle:"short"})," - ").concat(e.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"}),"h")}))}(t)}};"undefined"!=typeof window&&window.Vue&&window.Vue.use(t)})();
