@@ -1,4 +1,4 @@
-# Vue The Utils
+# Vue The Filters
 Filters for Vue
 
 ### :bookmark: Date Pretty
