@@ -1,6 +1,6 @@
 {
   "name": "vue-the-filters",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue Filters",
   "main": "index.js",
   "scripts": {
