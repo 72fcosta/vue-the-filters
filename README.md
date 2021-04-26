@@ -38,7 +38,7 @@ $ yarn add vue-the-filters
 ```
 
 ## License
-Vue-The-Utils is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Vue-The-Filters is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 ## Support
 Hello, I'm Fábio Costa the maintainer of this project in my free time, if this project does help you in any way please consider to support me. Thanks :smiley:
