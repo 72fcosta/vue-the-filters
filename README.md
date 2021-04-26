@@ -32,7 +32,7 @@ upperFirst
 $ npm install vue-the-filters --save
 ```
 
-#### Install via NPM
+#### Install via Yarn
 ```sh
 $ yarn add vue-the-filters
 ```
