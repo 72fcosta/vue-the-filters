@@ -4,11 +4,26 @@ Filters for Vue
 ### :bookmark: Date Pretty
 Prettify Date
 
+#### Usage
+```js
+datePretty
+```
+
 ### :bookmark: Datetime Pretty
 Prettify Datetime
 
+#### Usage
+```js
+datetimePretty
+```
+
 ### :bookmark: Upper First
 First letter capitalized in all words
+
+#### Usage
+```js
+upperFirst
+```
 
 ## Installation
 
