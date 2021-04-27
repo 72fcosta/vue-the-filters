@@ -17,6 +17,14 @@ Prettify Datetime
 datetimePretty
 ```
 
+### :bookmark: Time Pretty
+Prettify Time
+
+#### Usage
+```js
+timePretty
+```
+
 ### :bookmark: Upper First
 First letter capitalized in all words
 
