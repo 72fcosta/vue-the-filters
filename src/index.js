@@ -1,6 +1,6 @@
 import * as filters from './filters'
 
-const VueTheFilters = {
+const vueTheFilters = {
    install (Vue) {
       Object.keys(filters).forEach(key => {
          if (Vue.filter(key)) {
@@ -12,8 +12,8 @@ const VueTheFilters = {
    }
 }
 
-export default VueTheFilters
+export default vueTheFilters
 
 if (typeof window !== 'undefined' && window.Vue) {
-   window.Vue.use(VueTheFilters)
+   window.Vue.use(vueTheFilters)
 }
