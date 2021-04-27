@@ -7,7 +7,7 @@ const vueTheFilters = {
             console.warn(`[filter duplication]: A filter named ${key} has already been installed.`)
          } else {
             Vue.filter(key, filters[key])
-            Vue.prototype[$ + key] = key
+            Vue.prototype['$' + key] = key
          }
       })
    }
