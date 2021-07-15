@@ -9,7 +9,7 @@ const datePretty = date => {
       datetime = new Date(date)
    }
 
-   const dateOptions = { year: '2-digit', month: '2-digit', day: '2-digit' }
+   const dateOptions = { year: 'numeric', month: '2-digit', day: '2-digit' }
 
    return `${datetime.toLocaleDateString('pt-BR', dateOptions)}`
 }
