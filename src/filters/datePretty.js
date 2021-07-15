@@ -3,13 +3,14 @@ const datePretty = date => {
 
    const isTimestampObject = !!date.nanoseconds && !!date.seconds
    let datetime
+
    if (isTimestampObject) {
       datetime = new Date(date.seconds * 1000)
    } else {
       datetime = new Date(date)
    }
 
-   const dateOptions = { year: 'numeric', month: '2-digit', day: '2-digit' }
+   const dateOptions = { dateStyle: 'short' }
 
    return `${datetime.toLocaleDateString('pt-BR', dateOptions)}`
 }
