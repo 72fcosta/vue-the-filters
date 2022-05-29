@@ -6,6 +6,7 @@ const upperFirst = string => {
       .split(' ')
       .map((item, index) => {
          item = item.replace(/-./, (a) => a.toUpperCase())
+
          if (['i', 'ii', 'iii', 'iv', 'xv'].includes(item)) {
             item = item.toUpperCase()
          } else if (
@@ -15,7 +16,7 @@ const upperFirst = string => {
                !['sem', 'com', 'por', 'dos', 'das'].includes(item)
             )
          ) {
-            item = item[0].toUpperCase() + item.slice(1)
+            item = item[0] ? item[0].toUpperCase() + item.slice(1) : item.slice(1)
          }
          return item
       })
